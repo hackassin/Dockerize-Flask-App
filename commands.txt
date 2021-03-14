@@ -1,0 +1,10 @@
+virtualenv exp : Creates a virtualenv
+source exp/bin/activate: Activates virtualenv
+pip freeze > requirements.txt : Creates a list of python dependencies
+docker build -t hello-docker:v2 . : Builds docker image
+docker images : Lists all the local docker images
+docker run -d -p 5000:5000 hello-docker:v2 : Runs specific docker image in specific port
+docker ps: Lists the running docker containers
+docker stop <CONTAINER ID>: Stops the docker container
+docker ps -a: Lists dockers that have been stopped
+docker rm <CONTAINER ID>: Removes the docker container
